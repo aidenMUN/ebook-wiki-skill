@@ -1,0 +1,33 @@
+filters:
+  and:
+    - file.inFolder("30_concepts")
+formulas:
+  source_count: sources.length
+properties:
+  formula.source_count:
+    displayName: 근거 책 수
+  confidence:
+    displayName: 신뢰도
+  updated:
+    displayName: 갱신일
+views:
+  - type: table
+    name: 핵심 개념 (근거 많은 순)
+    order:
+      - file.name
+      - formula.source_count
+      - confidence
+      - sources
+      - updated
+    sort:
+      - property: formula.source_count
+        direction: DESC
+  - type: table
+    name: 최근 갱신
+    order:
+      - file.name
+      - updated
+      - formula.source_count
+    sort:
+      - property: updated
+        direction: DESC

@@ -1,0 +1,23 @@
+filters:
+  and:
+    - file.inFolder("40_entities")
+formulas:
+  source_count: sources.length
+properties:
+  kind:
+    displayName: 종류
+  formula.source_count:
+    displayName: 근거 책 수
+views:
+  - type: table
+    name: 종류별
+    groupBy:
+      property: kind
+      direction: ASC
+    order:
+      - file.name
+      - formula.source_count
+      - sources
+    sort:
+      - property: formula.source_count
+        direction: DESC

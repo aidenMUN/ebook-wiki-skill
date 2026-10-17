@@ -1,0 +1,6 @@
+# 개인 설정 (경로·시트 ID 포함)
+skill/ebook-wiki/config.json
+__pycache__/
+*.pyc
+.DS_Store
+.obsidian/workspace*.json

@@ -1,0 +1,21 @@
+filters:
+  and:
+    - file.inFolder("50_synthesis")
+properties:
+  question:
+    displayName: 질문·주제
+  notebook:
+    displayName: 노트북
+  created:
+    displayName: 작성일
+views:
+  - type: table
+    name: 종합·질의응답
+    order:
+      - file.name
+      - question
+      - notebook
+      - created
+    sort:
+      - property: created
+        direction: DESC

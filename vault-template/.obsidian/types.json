@@ -1,0 +1,23 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "tags": "tags",
+    "type": "text",
+    "title": "text",
+    "author": "text",
+    "category": "text",
+    "series": "text",
+    "drive_url": "text",
+    "notebook": "text",
+    "raw": "text",
+    "ocr_quality": "text",
+    "status": "text",
+    "ingested": "text",
+    "updated": "text",
+    "created": "text",
+    "kind": "text",
+    "sources": "multitext",
+    "confidence": "text",
+    "question": "text"
+  }
+}

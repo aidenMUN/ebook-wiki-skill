@@ -1,0 +1,49 @@
+filters:
+  and:
+    - file.inFolder("20_books")
+properties:
+  author:
+    displayName: 저자
+  category:
+    displayName: 분야
+  notebook:
+    displayName: 노트북
+  status:
+    displayName: 상태
+  ingested:
+    displayName: 위키화일
+  ocr_quality:
+    displayName: 인식품질
+views:
+  - type: table
+    name: 전체 도서
+    order:
+      - file.name
+      - author
+      - category
+      - notebook
+      - status
+      - ocr_quality
+      - ingested
+    sort:
+      - property: ingested
+        direction: DESC
+  - type: table
+    name: 분야별
+    groupBy:
+      property: category
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - notebook
+      - status
+  - type: table
+    name: 검토 대기
+    filters:
+      and:
+        - status == "위키반영"
+    order:
+      - file.name
+      - notebook
+      - ingested
