@@ -3,6 +3,7 @@ type: synthesis
 question: 
 sources: []
 notebook: 
+raw_p02: "[[10_raw/<노트북폴더>/<노트북폴더>_P02_YYYYMMDD]]"
 created: YYYY.MM.DD
 ---
 

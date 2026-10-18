@@ -126,7 +126,7 @@ python3 -I ~/.claude/skills/ebook-wiki/scripts/_config.py
 | `notebook_folder.py` | 노트북명을 안전한 폴더명으로 변환 |
 | `sheet_lookup.py` | 시트에서 책 행 번호·상태 찾기, 상태 집계 |
 | `new_files.py` | 서고에 있지만 시트에 없는 PDF 찾기 (macOS 한글 파일명 NFD 처리) |
-| `check_wiki.py` | 깨진 링크·이름 중복·frontmatter 누락·고아 페이지 점검 |
+| `check_wiki.py` | 오류(깨진 링크·필수값·`raw`/`raw_p02` 누락·이름 중복)·주의(고립된 원본·고아 페이지·index 누락)·정보(관리 문서 자리표시)로 나눠 점검. 오류 시 종료코드 1 |
 
 ## 주의 사항
 

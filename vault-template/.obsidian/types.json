@@ -10,6 +10,7 @@
     "drive_url": "text",
     "notebook": "text",
     "raw": "text",
+    "raw_p02": "text",
     "ocr_quality": "text",
     "status": "text",
     "ingested": "text",
