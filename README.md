@@ -1,5 +1,7 @@
 # ebook-wiki — 내 eBook으로 만드는 LLM Wiki (Claude Code 스킬)
 
+![eBook을 LLM 위키로 — 구글 드라이브(원본 서고) → NotebookLM(책 읽기) → Claude Code(위키 작성) → Obsidian(지식 연결)](docs/images/ebook_wiki_infographic_4x3.png)
+
 > 보유한 eBook(PDF)을 **NotebookLM으로 읽고, Claude가 Obsidian 위키로 쌓아 가는** 개인 지식 데이터베이스 운영 스킬
 > Andrej Karpathy의 [LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) 아이디어를 eBook 서고에 맞게 구현함
 
