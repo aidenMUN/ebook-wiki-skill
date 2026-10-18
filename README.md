@@ -67,7 +67,7 @@ ebook-wiki-skill/
 ## 설치
 
 ```bash
-git clone https://github.com/<계정>/ebook-wiki-skill.git
+git clone https://github.com/aidenMUN/ebook-wiki-skill.git
 cd ebook-wiki-skill
 
 # 1) 스킬 설치
